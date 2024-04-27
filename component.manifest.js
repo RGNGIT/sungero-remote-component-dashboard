@@ -61,6 +61,19 @@ module.exports = {
         { locale: 'en', name: 'String property editor' },
         { locale: 'ru', name: 'Редактор строкового свойства' },
       ]
+    },
+    {
+      name: 'EmployeeControl',
+      loaders: [
+        {
+          name: 'employees-rating-loader',
+          scope: 'Cover'
+        }
+      ],
+      displayNames: [
+        { locale: 'en', name: 'Employee dashboard' },
+        { locale: 'ru', name: 'Дашборд сотрудников' },
+      ]
     }
   ]
 };
