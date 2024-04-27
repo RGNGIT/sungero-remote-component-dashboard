@@ -13,6 +13,7 @@ import EmployeesRating from '../controls/employees-rating/employees-rating';
  */
 export default (args: ILoaderArgs): Promise<ControlCleanupCallback> => {
   const root = createRoot(args.container);
+  console.log('root render', args.api)
   root.render(<EmployeesRating initialContext={args.initialContext} api={args.api as IRemoteComponentCardApi} />);
   return Promise.resolve(() => root.unmount());
 }
