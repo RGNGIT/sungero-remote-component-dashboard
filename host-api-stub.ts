@@ -57,4 +57,5 @@ class HostStubApi implements IRemoteComponentCardApi {
 }
 
 const api: IRemoteComponentCardApi = new HostStubApi();
+
 export default api;
