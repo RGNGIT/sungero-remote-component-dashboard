@@ -43,7 +43,6 @@ const EmployeesRatingView: React.FC<IProps> = ({ entity }) => {
     }
 
     newEmployee.Status = employee.Status === EmployeeStatusEnum.RatingRequired ? EmployeeStatusEnum.Signed : EmployeeStatusEnum.RatingRequired;
-    console.log(newEmployee, employee )
     setEntityInstance(entityCopy);
   }
 
